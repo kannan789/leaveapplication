@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Application</title>
+    <style>
+        body{
+            background-color:#E5E4E2;
+            font-family: sans-serif;
+        }
+        .form_area{
+            margin-left: 200px;
+            margin-top: 30px;
+            width:800px;
+            height:680px;
+            border:2px solid lightgrey;
+            background-color: #FFFFFF;
+            
+        }
+        #title{
+            background-color:#F1f9ec;
+            height:50px;
+            border-bottom:2px solid lightgrey;
+           
+        }
+        #title_txt{
+            margin-left: 20px;
+            padding-top: 10px;
+            font-size: 28px;
+            font-weight: 600;
+        }
+        .form_fields{
+            margin-left: 20px;
+        }
+        .form_fields div{
+            margin-top: 25px;
+        }
+        #first_name,#last_name,#date_from,#date_to{
+            width:360px;
+            height:25px;
+            margin-top: 10px;
+        }
+        #last_name{
+            margin-left: 10px;
+        }
+        #lst{
+            margin-left: 360px;
+            
+        }
+        span{
+            opacity:0.7;
+            font-size: 13px;
+        }
+        #email_field,#mng_email,#drp_dwn{
+            width:740px;
+            height:25px;
+            margin-top: 10px;
+        }
+        button{
+            background-color: #0096FF;
+            color:white;
+            padding:10px 20px;
+            margin-top: 50px;
+            border:none;
+        }
+        input{
+            opacity:0.3;
+        }
+        #star{
+            margin-left: 5px;
+            color:red;
+            font-size: 15px;
+        }
+        </style>
+</head>
+<body>
+    <div class="form_area">
+        <div id="title">
+            <div id="title_txt">
+       Leave Application
+       </div>
+       </div>
+       <div class="form_fields">
+           <div>
+           <label>Name<span id="star">*</span></span></label><br>
+           <input id="first_name" type="text" required="required">
+           <input id="last_name" type="text" required="required">
+           <span>First</span><span id="lst">Last</span>
+           </div>
+           <div>
+            <label>Email<span id="star">*</span></label><br>
+            <input id="email_field" type="email" required="required">
+            </div>
+            <div>
+                <label>Date From</label><br>
+                <input id="date_from" type="date">
+              </div>
+              <div>
+                    <label>Date To</label><br>
+                    <input id="date_to" type="date">
+              </div>
+              <div>
+                     <label>Manager's Email<span id="star">*</span></label><br>
+                     <input id="mng_email" type="email" required="required">
+              </div>
+              <div>
+                      <label>Dropdown</label><br>
+                         <select id="drp_dwn" type="text">
+                                <option>-Select-</option>
+                                <option>Annual leave</option>
+                                <option>Carer's leave</option>
+                                <option>Compassionate</option>
+                                <option>Jury Duty</option>
+                                <option>Maternity Leave</option>
+                                <option>Parental Leave</option>
+                                <option>Long service leave</option>
+                                <option>Community service leave</option>
+                                <option>Sick leave</option>
+                                <option>Others</option>
+                          </select>
+                        </div>
+                <button onclick="confPage()">Apply Leave</button>
+            </div>
+        </div>
+
+
+
+        <script>
+            function confPage(){
+                location.href="confirmation.html";
+            }
+        </script>
+</body>
+</html>
